@@ -189,3 +189,51 @@ body {
     height: 60px;
   }
 }
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header input {
+    width: 100%;
+  }
+
+  .botoes {
+    justify-content: center;
+  }
+
+  .video-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .canal {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botao-port {
+    width: 100%;
+    text-align: center;
+  }
+
+  .recomendados .video-recomendado {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .recomendados .video-recomendado img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.header button {
+  padding: 8px;
+  border: none;
+  background: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
