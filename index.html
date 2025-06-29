@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Alice Maiara</h1>
+    <button id="toggle-theme" class="btn"> Modo Escuro</button>
+  </header>
+
+  <section class="perfil">
+    <img src="Imagem portfolio.jpg" alt="Minha Foto" />
+    <p><strong>Desenvolvedora em formação | ADS 👩🏽‍💻</strong> </p>
+  </section>
+
+  <section class="contato">
+    <h2>Contatos</h2>
+    <ul>
+      <li>E-mail</a></li>
+      <li><a href="https://github.com/alice-msm" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/alice-maiara-5bab66247/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <section class="projetos">
+    <h2>Projetos</h2>
+    <ul>
+      <li><a href="index2.html">Tech Connect</a></li>
+      <li><a href="index5.html">TechSummit</a></li>
+      <li><a href="index7.html">YouTube (Cópia)</a></li>
+    </ul>
+  </section>
+
+  <section class="tecnologias">
+    <h2>Tecnologias</h2>
+    <p>HTML • CSS • JavaScript • Git/GitHub • SCRUM</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Alice Maiara</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById("toggle-theme");
+    btn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      btn.textContent = document.body.classList.contains("dark") ? "Modo Claro" : "Modo Escuro";
+    });
+  </script>
+</body>
+</html>
